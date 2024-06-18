@@ -11182,7 +11182,6 @@ html {
   min-height: 15rem;
 }
 
-
 /* scroll-reveal  */
 
 .scroll-reveal * {
@@ -11194,9 +11193,8 @@ html {
   background-image: linear-gradient(90deg, white, white);
   animation: scroll-reveal linear forwards;
   animation-timeline: view();
-  animation-range:contain;
+  animation-range: contain;
   animation-range-start: 29.78vh;
-  
 }
 
 @keyframes scroll-reveal {
@@ -11208,24 +11206,20 @@ html {
 /* CSSscroll-reveal  */
 
 .CSSscroll-reveal * {
-  
   animation: CSSscroll-reveal ease-in-out both;
   filter: blur();
   animation-timeline: view();
   animation-range: entry 40% cover 40%;
-
-  
 }
 
 @keyframes CSSscroll-reveal {
   from {
     opacity: 0.3;
-    -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0)
+
     transform: translateY(0);
   }
 }
@@ -11233,7 +11227,6 @@ html {
 /* .CSSscroll-reveal1 */
 
 .CSSscroll-reveal1 * {
-  
   animation: CSSscroll-reveal1 ease-in-out both;
   filter: blur();
   animation-timeline: view();
@@ -11243,19 +11236,17 @@ html {
 @keyframes CSSscroll-reveal1 {
   from {
     opacity: 0.3;
-    -webkit-transform: translateX(-100px)
+
     transform: translateX(-100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0)
+
     transform: translateX(0);
   }
 }
 
-
 .CSSscroll-reveal2 * {
-  
   animation: CSSscroll-reveal2 ease-in-out both;
   filter: blur();
   animation-timeline: view();
@@ -11265,13 +11256,12 @@ html {
 @keyframes CSSscroll-reveal2 {
   from {
     opacity: 0.3;
-    
-    -webkit-transform: translateY(100px)
+
     transform: translateX(100px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0)
+
     transform: translateX(0);
   }
 }
