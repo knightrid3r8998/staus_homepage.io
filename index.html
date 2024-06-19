@@ -19,7 +19,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body class="d-flex flex-column h-100">
+  <body class="d-flex flex-column h-100 p-0">
     <main class="flex-shrink-0">
       <!-- Navigation-->
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -76,11 +76,18 @@
       </nav>
       <!-- Header-->
       <header class="bg-dark py-5">
-        <div class="container-fluid px-5 py-5 mb-5 mt-5">
-          <div class="row gx-5 align-items-center ">
-            <div class="col-lg-8 col-xl-7 col-xxl-6">
-              <div class="my-5 text-xl-start">
-                <p class="display-3 text-center text-white mb-2">
+        <div class="container-sm mb-5 mt-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-xl-8 col-xxl-8 col-sm-6 p-0 text-center">
+              <img
+                class="img-fluid rounded-3 my-5"
+                src="assets/staus1.png"
+                alt="..."
+              />
+            </div>
+            <div class="col-lg-4 col-xl-4 col-xxl-4 col-sm-6 p-0">
+              <div class="my-5 mx-1 text-xl-start">
+                <p class="display-4 text-center text-white mb-2">
                   Travel like a Star with
                   <span class="text-primary text-center display-1">STAUS</span>
                 </p>
@@ -104,20 +111,13 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 col-xxl-6 sm-6 d-xl-block text-center">
-              <img
-                class="img-fluid rounded-3 my-5"
-                src="assets/staus1.png"
-                alt="..."
-              />
-            </div>
           </div>
         </div>
       </header>
 
       <!-- Testimonial section-->
-      <div class="py-5 bg-white text-dark scroll CSSscroll-reveal1">
-        <div class="container-fluid px-3 my-5">
+      <div class="container py-5 bg-white text-dark scroll CSSscroll-reveal1">
+        <div class="px-3 my-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-10 col-xl-7">
               <div class="text-center">
@@ -152,7 +152,7 @@
         </div>
       </div>
 
-      <section class="py-5 bg-dark ">
+      <section class="py-5 bg-dark">
         <div class="container px-5 my-5">
           <div class="row gx-5 justify-content-center">
             <div class="col-lg-8 col-xl-6">
