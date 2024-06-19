@@ -11191,6 +11191,7 @@ html {
   background-size: 0%, 100%;
   background-repeat: no-repeat;
   background-image: linear-gradient(90deg, white, white);
+  -webkit-animation: scroll-reveal linear forwards ;
   animation: scroll-reveal linear forwards;
   animation-timeline: view();
   animation-range: contain;
@@ -11203,65 +11204,128 @@ html {
   }
 }
 
+@-webkit-keyframes scroll-reveal {
+  to {
+    background-size: 100%, 100%;
+  }
+}
+
 /* CSSscroll-reveal  */
 
 .CSSscroll-reveal * {
   animation: CSSscroll-reveal ease-in-out both;
+  -webkit-animation: CSSscroll-reveal ease-in-out both;
   filter: blur();
   animation-timeline: view();
   animation-range: entry 40% cover 40%;
 }
 
-@keyframes CSSscroll-reveal {
-  from {
-    opacity: 0.3;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
 
-    transform: translateY(0);
+@-webkit-keyframes CSSscroll-reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
+
+@keyframes CSSscroll-reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
 
 /* .CSSscroll-reveal1 */
 
 .CSSscroll-reveal1 * {
+  -webkit-animation: CSSscroll-reveal1 ease-in-out both;
   animation: CSSscroll-reveal1 ease-in-out both;
   filter: blur();
   animation-timeline: view();
   animation-range: entry 50% cover 30%;
 }
 
-@keyframes CSSscroll-reveal1 {
-  from {
-    opacity: 0.3;
-
-    transform: translateX(-100px);
+@-webkit-keyframes CSSscroll-reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
-  to {
-    opacity: 1;
 
-    transform: translateX(0);
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes CSSscroll-reveal1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
 
 .CSSscroll-reveal2 * {
+  -webkit-animation: CSSscroll-reveal2 ease-in-out both;
   animation: CSSscroll-reveal2 ease-in-out both;
   filter: blur();
   animation-timeline: view();
-  animation-range: entry 40% cover 40%;
+  animation-range: entry 0% cover 70%;
+}
+
+@-webkit-keyframes CSSscroll-reveal2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 @keyframes CSSscroll-reveal2 {
-  from {
-    opacity: 0.3;
-
-    transform: translateX(100px);
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    -ms-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
-  to {
-    opacity: 1;
 
-    transform: translateX(0);
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
   }
 }
