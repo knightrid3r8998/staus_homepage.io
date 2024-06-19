@@ -11214,7 +11214,7 @@ html {
 
 .CSSscroll-reveal * {
   animation: CSSscroll-reveal ease-in-out both;
-  -webkit-animation: CSSscroll-reveal ease-in-out both;
+  -webkit-animation: CSSscroll-reveal;
   filter: blur();
   animation-timeline: view();
   animation-range: entry 40% cover 40%;
@@ -11255,7 +11255,7 @@ html {
 /* .CSSscroll-reveal1 */
 
 .CSSscroll-reveal1 * {
-  -webkit-animation: CSSscroll-reveal1 ease-in-out both;
+  -webkit-animation: CSSscroll-reveal1 ;
   animation: CSSscroll-reveal1 ease-in-out both;
   filter: blur();
   animation-timeline: view();
@@ -11293,7 +11293,7 @@ html {
 }
 
 .CSSscroll-reveal2 * {
-  -webkit-animation: CSSscroll-reveal2 ease-in-out both;
+  -webkit-animation: CSSscroll-reveal2 ;
   animation: CSSscroll-reveal2 ease-in-out both;
   filter: blur();
   animation-timeline: view();
