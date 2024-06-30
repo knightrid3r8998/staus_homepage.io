@@ -11191,7 +11191,7 @@ html {
   background-size: 0%, 100%;
   background-repeat: no-repeat;
   background-image: linear-gradient(90deg, white, white);
-  -webkit-animation: scroll-reveal linear forwards ;
+  -webkit-animation: scroll-reveal linear forwards;
   animation: scroll-reveal linear forwards;
   animation-timeline: view();
   animation-range: contain;
@@ -11219,7 +11219,6 @@ html {
   animation-timeline: view();
   animation-range: entry 40% cover 40%;
 }
-
 
 @-webkit-keyframes CSSscroll-reveal {
   0% {
@@ -11251,11 +11250,10 @@ html {
   }
 }
 
-
 /* .CSSscroll-reveal1 */
 
 .CSSscroll-reveal1 * {
-  -webkit-animation: CSSscroll-reveal1 ;
+  -webkit-animation: CSSscroll-reveal1;
   animation: CSSscroll-reveal1 ease-in-out both;
   filter: blur();
   animation-timeline: view();
@@ -11293,7 +11291,7 @@ html {
 }
 
 .CSSscroll-reveal2 * {
-  -webkit-animation: CSSscroll-reveal2 ;
+  -webkit-animation: CSSscroll-reveal2;
   animation: CSSscroll-reveal2 ease-in-out both;
   filter: blur();
   animation-timeline: view();
@@ -11327,5 +11325,30 @@ html {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
+  }
+}
+
+.card-hero {
+  background-color: black;
+  opacity: 0.7;
+}
+
+.card-hero-body {
+  opacity: 1;
+}
+
+.hero-staus {
+  background-image: url("../assets/staus-bg.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-staus {
+    background-image: url("../assets/staus-bg.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
