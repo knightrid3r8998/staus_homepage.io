@@ -6105,12 +6105,12 @@ fieldset:disabled .btn {
   justify-content: center;
   width: 15%;
   padding: 0;
-  color: #fff;
+  color: white;
   text-align: center;
   background: none;
   border: 0;
-  opacity: 0.5;
-  transition: opacity 0.15s ease;
+  opacity: 1;
+  transition: opacity 0.0s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-control-prev,
@@ -6122,7 +6122,7 @@ fieldset:disabled .btn {
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: white;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -6208,8 +6208,8 @@ fieldset:disabled .btn {
   right: 15%;
   bottom: 1.25rem;
   left: 15%;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
   color: #fff;
   text-align: center;
 }
@@ -11331,16 +11331,16 @@ html {
 
 .card-hero {
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.6;
+  position: relative;
+  right: 15%;
 }
 
-.card-hero-body {
-  opacity: 1;
-}
+
 
 .hero-staus {
   background-image: url("../assets/staus-bg.png");
-  height: 90vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11348,8 +11348,16 @@ html {
 @media screen and (max-width: 768px) {
   .hero-staus {
     background-image: url("../assets/staus-bg.jpg");
-    height: 90vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .card-hero {
+    background-color: black;
+    opacity: 0.7;
+    position: relative;
+    right: 10%;
+    width: 80vw;
+    
   }
 }
